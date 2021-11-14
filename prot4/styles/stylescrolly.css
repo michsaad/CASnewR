@@ -1,0 +1,241 @@
+* {
+  font-family: "Arial";
+  color: white;
+  margin: 0px;
+}
+
+html {
+  height: 100vh;
+  background-color: black;
+  /* background-image: url(../assets/img/B2.png); */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  padding: 20px;
+}
+
+.entirebody {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+}
+
+.graphic {
+  position: sticky;
+  top: 40%;
+  left: 70%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  box-shadow: 10px 10px 26px black;
+}
+
+.borough {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
+p {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#scrolly {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  position: relative;
+}
+section {
+  flex-basis: 50%;
+}
+.scroll-step {
+  background-color: white;
+  font-family: "Dongle", sans-serif;
+  color: black;
+  height: 180px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 50px;
+  box-shadow: 6px 8px 15px darkblue;
+}
+
+.intro,
+.end {
+  height: 600px;
+}
+
+.end {
+  margin-top: 200px;
+}
+
+.shape {
+  box-shadow: 6px 8px 15px darkblue;
+  transition: opacity 1s linear;
+  opacity: 0;
+}
+
+.histogram {
+  height: 600px;
+}
+
+.trainhisto {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+}
+
+.trains {
+  width: 800px;
+  height: 160px;
+  position: relative;
+  animation: trains 20s infinite;
+  margin-bottom: 0px;
+}
+
+png {
+  box-shadow: 10px 10px 26px black;
+}
+
+#train1 {
+  animation-timing-function: linear;
+}
+#train2 {
+  animation-timing-function: ease;
+}
+#train3 {
+  animation-timing-function: ease-in;
+}
+#train4 {
+  animation-timing-function: ease-out;
+}
+#train5 {
+  animation-timing-function: ease-in-out;
+}
+#train6 {
+  animation-timing-function: linear;
+}
+#train7 {
+  animation-timing-function: ease;
+}
+#train8 {
+  animation-timing-function: ease-in;
+}
+#train9 {
+  animation-timing-function: ease-out;
+}
+#train10 {
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes trains {
+  from {
+    left: -2000px;
+  }
+  to {
+    left: 2000px;
+  }
+}
+
+.sectioncloud {
+  width: 100vw;
+  height: auto;
+  background-color: black;
+  box-shadow: 10px 10px 26px black;
+}
+
+.clouds {
+  height: 1400px;
+  width: auto;
+  margin-bottom: -1175px;
+  position: absolute;
+}
+
+/* #cloud3,
+#cloud2,
+#cloud1:hover {
+  animation: fade-out 12s;
+  animation: left-out 7s;
+  animation: right-out 10s;
+} */
+
+#cloud3:hover {
+  animation: fade-out 12s;
+}
+
+#cloud3 {
+  opacity: 0;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#cloud2:hover {
+  animation: left-out 7s;
+}
+
+#cloud2 {
+  left: -500px;
+  opacity: 0;
+}
+
+@keyframes left-out {
+  from {
+    transform: translateX(500px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+}
+
+#cloud1:hover {
+  animation: right-out 10s;
+}
+
+#cloud1 {
+  left: 1000px;
+  opacity: 0;
+}
+
+@keyframes right-out {
+  from {
+    transform: translateX(-1000px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+
+.thecloud {
+  height: 650px;
+  width: auto;
+  margin-bottom: -1180px;
+  padding-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
